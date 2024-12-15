@@ -52,6 +52,69 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
     <link rel="manifest" href="/manifest.json">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKH Travels Launch</title>
+    <style>
+        /* Popup styles */
+        #popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 80%;
+            max-width: 400px;
+            text-align: center;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+        }
+
+        #popup h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        #popup p {
+            margin: 10px 0;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <!-- Popup content -->
+    <div id="popup">
+        <h2>Welcome to SKH Travels!</h2>
+        <p>We're thrilled to announce the grand launch of SKH Travels on <strong>15th December 2024 at 4:25 PM</strong>.</p>
+        <p>At SKH Travels, our mission is to make your journeys seamless, comfortable, and memorable. Whether you're exploring new destinations or embarking on routine travels, we are here to ensure every trip is a delightful experience.</p>
+        <p>Thank you for joining us on this incredible journey. Here's to new beginnings and endless adventures!</p>
+        <p><strong>Warm regards,<br>The SKH Travels Team</strong></p>
+    </div>
+
+    <script>
+        // Show popup after 3 seconds
+        setTimeout(() => {
+            const popup = document.getElementById('popup');
+            popup.style.display = 'block';
+
+            // Remove popup after 5 seconds
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 5000);
+        }, 3000);
+    </script>
+</body>
+</html>
+
 
 
 <body>
@@ -628,7 +691,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Contact</h4>
                     <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>2/b, Main Road, Ivarithota, Guntur - 522001 (Opp New Bus Stand)</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>9440258565</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>admin@skhtravels.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
